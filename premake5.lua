@@ -20,10 +20,15 @@ project "raylib"
     "src/*.c"
   }
 
+filter "system:windows"
+	defines{"_WIN32"}
+        links {"winmm", "kernel32", "opengl32", "gdi32"}
+
+filter "system:linux"
+        links {"GL", "m", "dl", "rt", "X11"}
+
 	filter "configurations:Debug"
-		runtime "Debug"
 		symbols "on"
 
 	filter "configurations:Release"
-		runtime "Release"
 		optimize "on"
