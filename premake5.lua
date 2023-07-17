@@ -25,7 +25,7 @@ filter "system:windows"
         links {"winmm", "kernel32", "opengl32", "gdi32"}
 
 filter "system:linux"
-	defines{"PLATFORM_DESKTOP"}
+	defines{"_GNU_SOURCE", "PLATFORM_DESKTOP"}
         links {"GL", "m", "dl", "rt", "X11"}
 
 	filter "configurations:Debug"
