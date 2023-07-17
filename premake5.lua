@@ -18,7 +18,8 @@ architecture "x64"
   files
   {
     "src/*.h",
-    "src/*.c"
+    "src/*.c",
+	"src/external/glfw/**.c"
   }
 
 filter "system:windows"
