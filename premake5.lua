@@ -1,6 +1,6 @@
 project "raylib"
 	kind "StaticLib"
-architecture "x64"
+architecture "x86_64"
 	language "C"
 
   defines{"GRAPHICS_API_OPENGL_33"}
