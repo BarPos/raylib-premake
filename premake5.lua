@@ -1,5 +1,5 @@
 project "raylib"
-	kind "SharedLib"
+	kind "StaticLib"
 	language "C"
 
   defines{"GRAPHICS_API_OPENGL_33"}
