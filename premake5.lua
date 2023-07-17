@@ -21,10 +21,11 @@ project "raylib"
   }
 
 filter "system:windows"
-	defines{"_WIN32"}
+	defines{"_WIN32", "PLATFORM_DESKTOP", "_MSC_VER"}
         links {"winmm", "kernel32", "opengl32", "gdi32"}
 
 filter "system:linux"
+	defines{"PLATFORM_DESKTOP"}
         links {"GL", "m", "dl", "rt", "X11"}
 
 	filter "configurations:Debug"
