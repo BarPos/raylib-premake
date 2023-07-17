@@ -1,6 +1,6 @@
 project "raylib"
 	kind "StaticLib"
-	language "C"
+	language "C++"
 
   defines{"GRAPHICS_API_OPENGL_33"}
 
