@@ -22,7 +22,7 @@ architecture "x64"
   }
 
 filter "system:windows"
-	defines{"_WIN32", "PLATFORM_DESKTOP", "_CRT_SECURE_NO_WARNINGS"}
+	defines{"_WIN32", "PLATFORM_DESKTOP", "_MSC_VER", "_CRT_SECURE_NO_WARNINGS"}
         links {"winmm", "kernel32", "opengl32", "gdi32"}
 
 filter "system:linux"
